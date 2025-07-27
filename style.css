@@ -1,0 +1,158 @@
+/* body {
+    background-color: #2d2a3d;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+} */
+ body {
+    background-color: #2d2a3d;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 18px; /* 🔼 Increase from default (usually 16px) */
+}
+.start-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(45, 42, 61, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 2em;
+  border-radius: 12px;
+  color: #2d2a3d;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.popup-box h2 {
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+}
+
+.popup-box input {
+  padding: 10px;
+  font-size: 1.2em;
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+
+.popup-box button {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 7px;
+  background-color: #2d2a3d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-box button:hover {
+  background-color: #444;
+}
+
+.message {
+    margin: 5em 0 2em;
+    text-align: center;
+}
+.images {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    
+}
+/* .computer img,
+.player img {
+    width: 80%; 
+} */
+ .computer img,
+.player img {
+    width: clamp(120px, 20vw, 200px);
+}
+
+.shakeComputer {
+    animation: shakeComputer 0.8s linear;
+}
+.shakePlayer {
+    animation: shakePlayer 0.8s linear;
+}
+.points {
+    margin: 2em 0;
+    text-align: center;
+}
+.computer-score {
+    margin-left: 3em;
+}
+.player-score {
+    margin-right: 3em;
+}
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+.options button {
+    width: 150px;
+    height: 80px;
+    background: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 1.5em;
+    color: #fff;
+    white-space: nowrap;
+    outline: none;
+}
+.options button:hover {
+    background-color: #fff;
+    color: #2d2a3d;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+@keyframes shakeComputer {
+    0% {
+        transform: rotate(-30deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes shakePlayer {
+    0% {
+        transform: rotate(30deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
