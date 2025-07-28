@@ -1,13 +1,10 @@
-/* body {
+body {
     background-color: #2d2a3d;
     color: #fff;
     font-family: Poppins, sans-serif;
-} */
- body {
-    background-color: #2d2a3d;
-    color: #fff;
-    font-family: Poppins, sans-serif;
-    font-size: 18px; /* 🔼 Increase from default (usually 16px) */
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 .start-screen {
   position: fixed;
@@ -62,26 +59,42 @@
   background-color: #444;
 }
 
-.message {
-    margin: 5em 0 2em;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.game-title {
     text-align: center;
+    font-size: 2.5em;
+    margin: 1em 0 0.5em;
+    background: linear-gradient(45deg, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.message {
+    margin: 2em 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 .images {
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     height: 200px;
-    
+    margin: 2em 0;
 }
-/* .computer img,
-.player img {
-    width: 80%; 
-} */
- .computer img,
+.computer img,
 .player img {
     width: clamp(120px, 20vw, 200px);
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .shakeComputer {
@@ -103,7 +116,9 @@
 .options {
     display: flex;
     justify-content: space-around;
-    margin-top: 5em;
+    margin-top: 3em;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 .options button {
     width: 150px;
@@ -116,11 +131,83 @@
     color: #fff;
     white-space: nowrap;
     outline: none;
+    transition: all 0.3s ease;
 }
 .options button:hover {
     background-color: #fff;
     color: #2d2a3d;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255,255,255,0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .game-title {
+        font-size: 2em;
+        margin: 0.5em 0;
+    }
+    
+    .options {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+    
+    .options button {
+        width: 200px;
+        margin: 0.5em 0;
+        font-size: 1.3em;
+    }
+    
+    .images {
+        height: 120px;
+        margin: 1em 0;
+    }
+    
+    .computer img,
+    .player img {
+        width: clamp(80px, 25vw, 150px);
+    }
+    
+    .message {
+        font-size: 1.2em;
+        margin: 1em 0;
+    }
+    
+    .points {
+        font-size: 1em;
+        margin: 1.5em 0;
+    }
+    
+    .popup-box {
+        margin: 20px;
+        padding: 1.5em;
+    }
+    
+    .popup-box h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-title {
+        font-size: 1.8em;
+    }
+    
+    .options button {
+        width: 180px;
+        height: 70px;
+        font-size: 1.2em;
+    }
+    
+    .computer img,
+    .player img {
+        width: clamp(70px, 30vw, 120px);
+    }
 }
 @keyframes shakeComputer {
     0% {
