@@ -1,6 +1,13 @@
 # Rock-Paper-Scissor Game
 
+> **📋 Note**: This is an enhanced version of the original game created by [@Rpaul05](https://github.com/Rpaul05). This fork has been optimized for GitHub Pages deployment with additional responsive design improvements and bug fixes.
+
 A simple and interactive Rock-Paper-Scissor game built with HTML, CSS, and JavaScript. Challenge the computer and see if you can beat its moves!
+
+## 🔗 **Links**
+- **🎮 Play Live**: [Demo Game](https://rohan911438.github.io/Rock-Paper-Scissor-Game)
+- **📂 Original Repository**: [Rpaul05/Rock-Paper-Scissor-Game](https://github.com/Rpaul05/Rock-Paper-Scissor-Game)
+- **📂 This Enhanced Fork**: [rohan911438/Rock-Paper-Scissor-Game](https://github.com/rohan911438/Rock-Paper-Scissor-Game)
 
 ## Demo
 
@@ -131,19 +138,35 @@ Same moves = Draw
 
 ## Installation & Usage
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/rohan911438/Rock-Paper-Scissor-Game.git
-   ```
+### 📥 **Option 1: Use This Enhanced Version (Deployment Ready)**
+```bash
+# Clone this enhanced version (ready for GitHub Pages)
+git clone https://github.com/rohan911438/Rock-Paper-Scissor-Game.git
+cd Rock-Paper-Scissor-Game
+```
 
-2. **Navigate to the project directory:**
-   ```bash
-   cd Rock-Paper-Scissor-Game
-   ```
+### 📥 **Option 2: Original Version**
+```bash
+# Clone the original version by Rpaul05
+git clone https://github.com/Rpaul05/Rock-Paper-Scissor-Game.git
+cd Rock-Paper-Scissor-Game
+```
 
-3. **Open `index.html` in your browser** or deploy to GitHub Pages.
+### 🚀 **Run the Game**
+```bash
+# Open index.html in your browser
+# OR start a local server (optional)
 
-No additional dependencies are required.
+# Python 3
+python -m http.server 8000
+
+# Node.js
+npx serve .
+
+# Then visit http://localhost:8000
+```
+
+**No additional dependencies are required for either version.**
 
 ## GitHub Pages Deployment
 
@@ -339,17 +362,26 @@ npx serve .
 - [ ] TypeScript migration
 - [ ] Accessibility audit and improvements
 
-## Author
+## Author & Credits
 
-### 👨‍💻 **Developer Information**
-- **GitHub**: [@rohan911438](https://github.com/rohan911438)
-- **Repository**: [Rock-Paper-Scissor-Game](https://github.com/rohan911438/Rock-Paper-Scissor-Game)
-- **Contact**: Feel free to reach out for collaborations or questions!
+### 👨‍💻 **Original Creator**
+- **Original Author**: [@Rpaul05](https://github.com/Rpaul05) 
+- **Original Repository**: [Rock-Paper-Scissor-Game](https://github.com/Rpaul05/Rock-Paper-Scissor-Game)
+- **Credit**: Full credit goes to Rpaul05 for creating this awesome Rock-Paper-Scissors game
 
-### 🤝 **Connect With Me**
-- Open to collaborations and contributions
-- Available for discussions about web development
-- Happy to help with questions about the code
+### 🛠 **Deployment Preparation**
+- **Prepared for deployment by**: [@rohan911438](https://github.com/rohan911438)
+- **This Fork**: [Rock-Paper-Scissor-Game](https://github.com/rohan911438/Rock-Paper-Scissor-Game)
+- **Improvements Added**: 
+  - Fixed UI issues and responsive design
+  - Added GitHub Pages deployment configuration
+  - Enhanced documentation and README
+  - Mobile optimization and accessibility improvements
+
+### 🤝 **Collaboration**
+- Original game concept and implementation: **Rpaul05**
+- Deployment optimization and enhancements: **rohan911438**
+- Open to further contributions from the community
 
 ## License
 
@@ -366,6 +398,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## Acknowledgments
 
 ### 🙏 **Credits**
+- **Original Creator**: [@Rpaul05](https://github.com/Rpaul05) - Created the initial Rock-Paper-Scissors game
+- **Deployment Preparation**: [@rohan911438](https://github.com/rohan911438) - Enhanced for GitHub Pages deployment
 - **Design Inspiration**: Classic Rock-Paper-Scissors game mechanics
 - **CSS Animations**: Modern web animation techniques
 - **Responsive Design**: Mobile-first development principles
@@ -414,6 +448,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **⭐ Star this repository if you found it helpful!**
 
-Made with ❤️ by [rohan911438](https://github.com/rohan911438)
+**Original Game by [Rpaul05](https://github.com/Rpaul05) | Deployment Enhanced by [rohan911438](https://github.com/rohan911438)**
+
+Made with ❤️ for the community
 
 </div>
