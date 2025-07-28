@@ -27,40 +27,25 @@ A simple and interactive Rock-Paper-Scissor game built with HTML, CSS, and JavaS
 1. **Set Target Score:**  
    When you open the game, enter your desired winning score (e.g., 5, 10, etc.)
 
-2. **Start the Game:**  
-   Click "Start Game" to begin playing
 
-3. **Choose Your Move:**  
-   Click on one of the three buttons: **STONE**, **PAPER**, or **SCISSORS**
 
-4. **View Results:**  
-   Watch the animated moves and see who wins each round
 
-5. **Win the Game:**  
-   First to reach the target score wins!
 
 ## Project Structure
 
-```
-Rock-Paper-Scissor-Game/
+
 ├── index.html              # Main HTML file - game structure and layout
 ├── style.css               # Responsive CSS styling with animations
 ├── script.js               # Game logic and interactive functionality
-├── DEPLOYMENT.md           # GitHub Pages deployment guide
 ├── README.md               # Project documentation
 ├── rockPlayer.jpg          # Player rock gesture image
-├── rockComputer.jpg        # Computer rock gesture image
-├── paperPlayer.jpg         # Player paper gesture image
 ├── paperComputer.jpg       # Computer paper gesture image
 ├── scissorPlayer.jpg       # Player scissors gesture image
 └── scissorComputer.jpg     # Computer scissors gesture image
 ```
 
-### File Details:
 - **`index.html`** - Main HTML structure with semantic markup and SEO meta tags
 - **`style.css`** - Modern responsive design with mobile-first approach and smooth animations
-- **`script.js`** - Game logic including score tracking, move validation, and win condition detection
-- **Image files** - Visual representations for each move (rock, paper, scissors) for both player and computer
 
 ## Technical Details
 
@@ -71,17 +56,17 @@ Rock-Paper-Scissor-Game/
 - **Responsive Design** - Mobile-first approach with media queries
 
 ### 🎨 **Design Features**
-- **Modern UI/UX** - Clean, intuitive interface with gradient effects
 - **Smooth Animations** - CSS transitions and keyframe animations
 - **Responsive Layout** - Optimized for all screen sizes (320px to 1920px+)
-- **Touch-Friendly** - Large buttons and proper spacing for mobile devices
 - **Visual Feedback** - Hover effects and interactive button states
 
 ### ⚡ **Performance**
-- **Lightweight** - No external dependencies or frameworks
-- **Fast Loading** - Optimized images and minimal CSS/JS
 - **Cross-Browser** - Compatible with all modern browsers
-- **SEO Optimized** - Proper meta tags and semantic HTML
+## 🧑‍💻 Code Contribution Tips
+When editing code, follow these best practices:
+- Keep logic modular and comment complex sections.
+- Test changes in multiple browsers and devices.
+- Update this section if you add new files or major features.
 
 ### 📱 **Responsive Breakpoints**
 - **Mobile**: 320px - 480px (Optimized for phones)
