@@ -8,24 +8,29 @@ A simple and interactive Rock-Paper-Scissor game built with HTML, CSS, and JavaS
 
 ## Features
 
-- Play Rock, Paper, or Scissors against the computer.
-- Real-time score tracking for both player and computer.
-- Visual representation of each move with images.
-- Responsive and user-friendly interface.
+- **Interactive Gameplay:** Play Rock, Paper, or Scissors against the computer
+- **Score System:** Set your target winning score before starting
+- **Real-time Score Tracking:** Live updates for both player and computer scores
+- **Visual Animations:** Shake animations during move selection
+- **Responsive Design:** Works perfectly on desktop and mobile devices
+- **Modern UI:** Clean and user-friendly interface
 
 ## How to Play
 
-1. **Start the Game:**  
-   Open `index.html` in your browser.
+1. **Set Target Score:**  
+   When you open the game, enter your desired winning score (e.g., 5, 10, etc.)
 
-2. **Choose Your Move:**  
-   Click on one of the three buttons: **STONE**, **PAPER**, or **SCISSORS**.
+2. **Start the Game:**  
+   Click "Start Game" to begin playing
 
-3. **View Results:**  
-   The computer will randomly select its move. Both moves are displayed with images, and the winner of the round is shown.
+3. **Choose Your Move:**  
+   Click on one of the three buttons: **STONE**, **PAPER**, or **SCISSORS**
 
-4. **Score Tracking:**  
-   The scores for both the player and the computer are updated after each round.
+4. **View Results:**  
+   Watch the animated moves and see who wins each round
+
+5. **Win the Game:**  
+   First to reach the target score wins!
 
 ## Project Structure
 
@@ -50,18 +55,29 @@ A simple and interactive Rock-Paper-Scissor game built with HTML, CSS, and JavaS
 ## Installation & Usage
 
 1. **Clone the repository:**
-   ```powershell
-   git clone https://github.com/Rpaul05/Rock-Paper-Scissor-Game.git
+   ```bash
+   git clone https://github.com/rohan911438/Rock-Paper-Scissor-Game.git
    ```
 
 2. **Navigate to the project directory:**
-   ```powershell
+   ```bash
    cd Rock-Paper-Scissor-Game
    ```
 
-3. **Open `index.html` in your browser.**
+3. **Open `index.html` in your browser** or deploy to GitHub Pages.
 
 No additional dependencies are required.
+
+## GitHub Pages Deployment
+
+To deploy this game on GitHub Pages:
+
+1. Push your code to a GitHub repository
+2. Go to your repository settings
+3. Scroll down to "Pages" section
+4. Select "Deploy from a branch" 
+5. Choose "main" branch and "/ (root)" folder
+6. Your game will be live at: `https://yourusername.github.io/repository-name`
 
 ## Contributing
 
@@ -69,7 +85,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## Author
 
-- GitHub: [Rpaul05](https://github.com/Rpaul05)
+- GitHub: [rohan911438](https://github.com/rohan911438)
 
 ## License
 
@@ -77,5 +93,5 @@ This project is licensed under the MIT License.
 
 ---
 
-> **Repository:**  
-> [https://github.com/Rpaul05/Rock-Paper-Scissor-Game](https://github.com/Rpaul05/Rock-Paper-Scissor-Game)
+> **Live Demo:**  
+> [Play the Game](https://rohan911438.github.io/Rock-Paper-Scissor-Game)

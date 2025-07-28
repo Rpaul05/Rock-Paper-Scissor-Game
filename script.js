@@ -4,7 +4,7 @@ modal.className = "start-screen";
 modal.innerHTML = `
   <div class="popup-box">
     <h2>Set Winning Score</h2>
-    <input type="number" id="maxScoreInput" placeholder="e.g. 5" min="1" />
+    <input type="number" id="maxScoreInput" placeholder="e.g. 5" min="1" max="99" />
     <button id="startBtn">Start Game</button>
   </div>
 `;
@@ -29,8 +29,8 @@ document.addEventListener("click", function (e) {
   if (e.target && e.target.id === "startBtn") {
     const maxScoreInput = document.getElementById("maxScoreInput");
     const val = parseInt(maxScoreInput.value);
-    if (isNaN(val) || val < 1) {
-      alert("Please enter a valid number greater than 0.");
+    if (isNaN(val) || val < 1 || val > 99) {
+      alert("Please enter a valid number between 1 and 99.");
       return;
     }
     maxScore = val;
